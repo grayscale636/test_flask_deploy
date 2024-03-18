@@ -1,0 +1,81 @@
+/* CSS khusus untuk layout */
+
+/* Sidebar (menu di samping kiri) */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.social-icons a i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.sidebar ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    background-color: #555;
+}
+
+/* Konten */
+.content {
+    margin-left: 220px; /* Mengompensasi lebar sidebar */
+    padding: 20px;
+}
+
+/* Styling tambahan untuk konten */
+.content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.content .btn {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.content .btn:hover {
+    background-color: #ff8533;
+}
+
+.footer {
+    bottom: 1;
+    width: 100%;
+    background-color: #808080; /* Warna latar belakang footer */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}

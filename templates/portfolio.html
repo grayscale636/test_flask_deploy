@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+    <nav class="sidebar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li><a href="/about">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Tombol toggle untuk menampilkan/menyembunyikan sidebar -->
+    <div class="toggle-btn" onclick="toggleSidebar()">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <div class="content">
+        <div class="experience">
+            <h2>Experience</h2>
+            <div class="job">
+                <h3>Company A</h3>
+                <p>Position: Data Scientist</p>
+                <p>Duration: January 2020 - Present</p>
+            </div>
+            <div class="job">
+                <h3>Company B</h3>
+                <p>Position: Machine Learning Engineer</p>
+                <p>Duration: June 2018 - December 2019</p>
+            </div>
+            <!-- Add more experiences here as needed -->
+        </div>
+        
+        <div class="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Data Science Project 1</h3>
+                <p>Description of project 1</p>
+            </div>
+            <div class="project">
+                <h3>Machine Learning Project 1</h3>
+                <p>Description of project 2</p>
+            </div>
+            <div class="project">
+                <h3>Artificial Intelligence Project 1</h3>
+                <p>Description of project 3</p>
+            </div>
+            <!-- Add more projects here as needed -->
+        </div>
+    </div>
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>

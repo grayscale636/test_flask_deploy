@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - My Portfolio</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome untuk ikon -->
+</head>
+<body>
+    <header>
+        <nav class="sidebar">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/portfolio">Portfolio</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </nav>
+        <span class="toggle-btn" onclick="toggleSidebar()">
+            <i class="fas fa-bars"></i>
+        </span>
+    </header>
+
+    <div class="content">
+        <section class="hero">
+            <h1>Happy Gery Pangestu</h1>
+            <!-- Tambahkan ikon media sosial di sini -->
+            <div class="social-icons">
+                <a href="https://www.instagram.com/your_username" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/your_username" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/your_username" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.kaggle.com/your_username" target="_blank"><i class="fab fa-kaggle"></i></a>
+            </div>
+            <!-- Akhir bagian ikon media sosial -->
+            <p>Explore my projects and skills</p>
+            <a href="#about" class="btn">Learn More</a>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>What is Lorem Ipsum?
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                Why do we use it?
+                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+            </p>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>SQL</li>
+                <li>Git</li>
+            </ul>
+        </section>
+    </div>
+    
+    <footer class="footer">
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
